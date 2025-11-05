@@ -1,0 +1,3186 @@
+{
+	"tables": {
+		"65beb7c6-05f4-416d-a8d2-a99030497374": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "65beb7c6-05f4-416d-a8d2-a99030497374",
+			"name": "Categories",
+			"desc": "",
+			"cols": [
+				{
+					"id": "310c880a-e6e9-4a8c-933f-26544716cfd0",
+					"name": "CategoryID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": true
+					}
+				},
+				{
+					"id": "905d8ac0-cfcb-4270-9026-0a19856893b1",
+					"name": "CategoryName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "c0cb9d5a-cdb3-4b3a-9e21-8407cad2ecc9",
+					"name": "Description",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "aa259560-28ae-4626-8ae8-a0064b72ef76",
+					"name": "Picture",
+					"datatype": "BLOB",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"f235acbe-312e-4665-9c96-a9d840dae4d2"
+			],
+			"keys": [
+				{
+					"id": "2e44ef81-ea86-4d8e-89f2-cc1dfa4f749a",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "372d6f90-cfbd-4b0f-bcbd-99920a5c3747",
+							"colid": "310c880a-e6e9-4a8c-933f-26544716cfd0"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"fa1b3db4-c530-40c6-a526-541298513184": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "fa1b3db4-c530-40c6-a526-541298513184",
+			"name": "CustomerCustomerDemo",
+			"desc": "",
+			"cols": [
+				{
+					"id": "8f98b113-21fe-4a45-9968-7511e3162007",
+					"name": "CustomerID",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "277e7907-fb53-4c42-82c3-9b2297948138",
+					"name": "CustomerTypeID",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"7b2306ac-5a69-4a01-b588-0dd1456d418f",
+				"62afc1b0-ddcb-421d-9fe1-fb794b5366ba"
+			],
+			"keys": [
+				{
+					"id": "4e5f5f29-61f3-4f54-8716-c324f0595449",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "2a0f35f6-e5af-4ea4-a49c-acb2085987d2",
+							"colid": "8f98b113-21fe-4a45-9968-7511e3162007"
+						},
+						{
+							"id": "406b44c0-0f6f-4176-847b-ff6eec2a5c9f",
+							"colid": "277e7907-fb53-4c42-82c3-9b2297948138"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"dd7a70db-40e7-49cf-a818-0f4a30689986": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "dd7a70db-40e7-49cf-a818-0f4a30689986",
+			"name": "CustomerDemographics",
+			"desc": "",
+			"cols": [
+				{
+					"id": "8f87f2e4-be15-4bfa-a90c-dc904b0a1f1f",
+					"name": "CustomerTypeID",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "046850c5-e157-4700-b5c4-379c29e2cc21",
+					"name": "CustomerDesc",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"7b2306ac-5a69-4a01-b588-0dd1456d418f"
+			],
+			"keys": [
+				{
+					"id": "dfcb8e4d-aeec-4275-9380-7bbb95968d62",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "c6d8fc76-97ea-4449-8146-25855d886213",
+							"colid": "8f87f2e4-be15-4bfa-a90c-dc904b0a1f1f"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"6a67c74b-fcd3-4ee0-bbf2-1980cafa2e6d": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "6a67c74b-fcd3-4ee0-bbf2-1980cafa2e6d",
+			"name": "Customers",
+			"desc": "",
+			"cols": [
+				{
+					"id": "7193fe0a-bd0b-46e6-958e-ae7b96a9f59f",
+					"name": "CustomerID",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": true,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "420106b9-3971-4225-a7af-07f72431dc89",
+					"name": "CompanyName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "21d10d69-4a14-4e77-88e7-46311e30b76f",
+					"name": "ContactName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "2a33f382-16e8-4cb9-a809-a87b09eded67",
+					"name": "ContactTitle",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "ab87cb32-095e-4442-aba5-7f2803d8dfbe",
+					"name": "Address",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "d6e60d17-cf0e-45e2-b3dd-55f2abaafa80",
+					"name": "City",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "3ba41f36-41e9-475c-8fb6-f932b9510b78",
+					"name": "Region",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "5b2d955e-aa4b-47a7-837f-6192280f6d59",
+					"name": "PostalCode",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "1bf111b0-5989-4890-b3a2-767bcc7e001a",
+					"name": "Country",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "90feed7e-597c-4300-8bc6-e97b4206f3bd",
+					"name": "Phone",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "b3ad7b5c-117e-4613-b5a7-5c625bdeee27",
+					"name": "Fax",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"62afc1b0-ddcb-421d-9fe1-fb794b5366ba",
+				"f76cf908-8a1e-4f9c-9d79-b988bc4101cc"
+			],
+			"keys": [
+				{
+					"id": "3b9dcf6e-3cf9-4f10-9c8b-4b3dcdc8f03b",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "5f79c9bf-b93d-47dc-8954-e2a3827e4790",
+							"colid": "7193fe0a-bd0b-46e6-958e-ae7b96a9f59f"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"2c194e67-0bba-400d-bac6-77c3ced6c22e": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "2c194e67-0bba-400d-bac6-77c3ced6c22e",
+			"name": "Employees",
+			"desc": "",
+			"cols": [
+				{
+					"id": "90cd323e-61ee-4cb3-b653-04ff0143582c",
+					"name": "EmployeeID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": true
+					}
+				},
+				{
+					"id": "b95ba73c-4837-446a-922b-84b48ec97c60",
+					"name": "LastName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "b0aad560-5425-4fe1-9ab2-668a1428aabf",
+					"name": "FirstName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "1276e851-0aa0-4882-bd6f-817b69ff2266",
+					"name": "Title",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "a4a163a1-ebeb-4343-a37c-4d18652d7807",
+					"name": "TitleOfCourtesy",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "f539833f-75a3-4e36-8d79-96c8145e7e0f",
+					"name": "BirthDate",
+					"datatype": "DATE",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "44c44b6b-1bd8-4502-b900-4283de528c4b",
+					"name": "HireDate",
+					"datatype": "DATE",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "379e1cd1-4f24-4ad1-8d12-9e01698e011a",
+					"name": "Address",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "4ab3d9f8-4d19-426e-8907-d134fbb0b339",
+					"name": "City",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "63cba616-61c8-4e3f-89d5-01561d6532f1",
+					"name": "Region",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "ebb8409e-d567-49a6-9a6d-8d0413c02867",
+					"name": "PostalCode",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "44fd0fb1-042e-4ea4-b1db-788bb2166f6c",
+					"name": "Country",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "57000451-7625-44d2-8d0d-cdbada1f932f",
+					"name": "HomePhone",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "4009e983-33b1-44df-ad0d-cf813138c05a",
+					"name": "Extension",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "ae6a0922-b344-4d25-9e08-02c7a575a3a2",
+					"name": "Photo",
+					"datatype": "BLOB",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "222d7e7d-4a90-4c4c-ba49-90ccee7b3500",
+					"name": "Notes",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "f6a5930d-f39f-44f1-ba79-11f4ef9104ee",
+					"name": "ReportsTo",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "2dd3444a-f92b-4b9a-b21f-8e8592a32379",
+					"name": "PhotoPath",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"3be9d39e-c38e-433b-959a-f0f2cabe1231",
+				"47f8637e-246d-456d-88dd-67d14f4d7fc6",
+				"2a6763de-37b2-4ae2-be93-a961f90110f6"
+			],
+			"keys": [
+				{
+					"id": "d4dd597e-9c72-46f9-b6ce-0337babe51e6",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "1c680f23-2cb8-4e4d-a05d-a6cd17d8ec8d",
+							"colid": "90cd323e-61ee-4cb3-b653-04ff0143582c"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"3ba2ed01-1d42-4014-a39e-63f5db5b1f66": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "3ba2ed01-1d42-4014-a39e-63f5db5b1f66",
+			"name": "EmployeeTerritories",
+			"desc": "",
+			"cols": [
+				{
+					"id": "3e0e30f5-25b2-4ab8-9eff-f38c3fa9d444",
+					"name": "EmployeeID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "b5c6db3e-4da6-409a-84d4-461b1b091c18",
+					"name": "TerritoryID",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"ca496287-cc9d-4d61-af07-c1fdcc1a2113",
+				"47f8637e-246d-456d-88dd-67d14f4d7fc6"
+			],
+			"keys": [
+				{
+					"id": "bbfc4b9c-f21a-48fa-a6d9-ad2ae00da2e9",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "311433fe-0ecf-4c0f-b489-be70462d4360",
+							"colid": "3e0e30f5-25b2-4ab8-9eff-f38c3fa9d444"
+						},
+						{
+							"id": "b0388b99-a370-4c44-b1be-9de5c02e208d",
+							"colid": "b5c6db3e-4da6-409a-84d4-461b1b091c18"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"9a915558-6fa9-4248-bb15-363ce56f9ea3": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "9a915558-6fa9-4248-bb15-363ce56f9ea3",
+			"name": "OrderDetails",
+			"desc": "",
+			"cols": [
+				{
+					"id": "f4f5e0eb-b413-4294-ae63-3a60c593c12a",
+					"name": "OrderID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "b828ddad-6dc5-4728-ad7d-852951236fa5",
+					"name": "ProductID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "dd8d4e3d-b00d-433e-bbf7-d3f8b55929e4",
+					"name": "UnitPrice",
+					"datatype": "NUMERIC",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "0",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "25b25c51-36f0-45d9-95e0-f5aa881333f6",
+					"name": "Quantity",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "1",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "d24f58cb-611c-4dab-91f5-4dc2cd08246f",
+					"name": "Discount",
+					"datatype": "REAL",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "0",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"88fda8f1-e512-47c1-b3e4-621fe2bc77be",
+				"31c9b5cc-d887-4324-97f2-e007becc6a37"
+			],
+			"keys": [
+				{
+					"id": "6e3838b8-5ec9-4003-8205-73bedf3a0b66",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "f4a4322f-bfa0-4aea-b9c2-4530b703ef52",
+							"colid": "f4f5e0eb-b413-4294-ae63-3a60c593c12a"
+						},
+						{
+							"id": "5440034e-3045-49ab-8f4b-419f00ad0d5f",
+							"colid": "b828ddad-6dc5-4728-ad7d-852951236fa5"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"d71dcf54-604a-4ce8-879e-6b94a9d002d6": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "d71dcf54-604a-4ce8-879e-6b94a9d002d6",
+			"name": "Orders",
+			"desc": "",
+			"cols": [
+				{
+					"id": "ad6d1773-aff1-4a24-9a9c-38717e53ade1",
+					"name": "OrderID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": true
+					}
+				},
+				{
+					"id": "7a318e6a-0136-4d56-9c6b-62126e998cbc",
+					"name": "CustomerID",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "abd002a1-38f8-40da-8c17-fe94cc1d1f08",
+					"name": "EmployeeID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "dc25bc76-f72b-46cb-9c06-a1a487c11e41",
+					"name": "OrderDate",
+					"datatype": "DATETIME",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "96380635-7a7f-4848-84c9-0f1ef2ad4866",
+					"name": "RequiredDate",
+					"datatype": "DATETIME",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "4246e4a9-9690-4d43-84ea-3f6fdaf58bdb",
+					"name": "ShippedDate",
+					"datatype": "DATETIME",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "5c1eb5f0-08d6-49fd-ac37-2a57452c68f5",
+					"name": "ShipVia",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "3fec74e6-25f6-4174-8820-108cc7130480",
+					"name": "Freight",
+					"datatype": "NUMERIC",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "0",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "1dd4d671-4486-47e5-8912-f0323f21c100",
+					"name": "ShipName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "cf8aeb53-5a2b-4759-8ea3-9e9273fe5675",
+					"name": "ShipAddress",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "f1418daa-5426-4cfc-9c5e-c12e63ca04c1",
+					"name": "ShipCity",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "456de0c8-746e-4e2f-a797-a32fee14983b",
+					"name": "ShipRegion",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "f84bb7aa-a667-400c-a6e1-3be98a45b1b3",
+					"name": "ShipPostalCode",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "f92c6c15-139c-4eba-bfef-deb089b7312a",
+					"name": "ShipCountry",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"31c9b5cc-d887-4324-97f2-e007becc6a37",
+				"451ad94c-644a-40b1-a999-1d6eabc5b07a",
+				"f76cf908-8a1e-4f9c-9d79-b988bc4101cc",
+				"2a6763de-37b2-4ae2-be93-a961f90110f6"
+			],
+			"keys": [
+				{
+					"id": "830ba7f9-1299-4bef-b8b9-57ca8a7c8a26",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "f9a25fff-3bcb-475c-b850-cd19c4a124ef",
+							"colid": "ad6d1773-aff1-4a24-9a9c-38717e53ade1"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"6c5ab42a-62bf-4e22-aaca-09ef46da2354": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "6c5ab42a-62bf-4e22-aaca-09ef46da2354",
+			"name": "Products",
+			"desc": "",
+			"cols": [
+				{
+					"id": "98c3c93d-e64c-4e42-88d9-50ab03a034c2",
+					"name": "ProductID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": true
+					}
+				},
+				{
+					"id": "1ae6e528-2dd6-4685-88dd-662ebc0ae919",
+					"name": "ProductName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "1642094d-dba9-43a6-b455-992b13d28264",
+					"name": "SupplierID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "0762bfeb-995f-4f92-9956-e1a083f9c590",
+					"name": "CategoryID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "04a30b72-545f-4070-8d3f-72d631dc22a2",
+					"name": "QuantityPerUnit",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "c2cd0a22-c0a8-49a7-b7c8-8a1157d7851d",
+					"name": "UnitPrice",
+					"datatype": "NUMERIC",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "0",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "abc0fd71-8bf7-4358-a9e7-afdef83c1955",
+					"name": "UnitsInStock",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "0",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "bec57350-308d-44db-8e63-b0f0802137a1",
+					"name": "UnitsOnOrder",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "0",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "6cae21e4-7041-41cb-b3d1-78947d553f0e",
+					"name": "ReorderLevel",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "0",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "4b804257-a244-4ef3-8919-6fe20761df11",
+					"name": "Discontinued",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "'0'",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"88fda8f1-e512-47c1-b3e4-621fe2bc77be",
+				"3c259386-c70e-44fa-95e1-fba21031f2b2",
+				"f235acbe-312e-4665-9c96-a9d840dae4d2"
+			],
+			"keys": [
+				{
+					"id": "d386ac14-af18-445e-911a-63e9da3a3e60",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "ae0fffd6-0ff5-406d-8732-871c03cf7d2e",
+							"colid": "98c3c93d-e64c-4e42-88d9-50ab03a034c2"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"e3f325bf-b4f7-4ea0-90a6-08e8b6990ba6": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "e3f325bf-b4f7-4ea0-90a6-08e8b6990ba6",
+			"name": "Regions",
+			"desc": "",
+			"cols": [
+				{
+					"id": "905decd9-ce22-427b-b6b3-0d3cfd226dd9",
+					"name": "RegionID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "948bdfe7-d9f6-4f51-bad4-60a76ce6f296",
+					"name": "RegionDescription",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"63998a18-95f9-4c1b-b90b-952c9c396fcc"
+			],
+			"keys": [
+				{
+					"id": "15300d4a-68f3-46aa-b092-a765e18afad2",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "80a40024-f62f-420e-9fe2-410e573e9a56",
+							"colid": "905decd9-ce22-427b-b6b3-0d3cfd226dd9"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"b57805f8-616d-408b-b1e4-0aaaf357d3fa": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "b57805f8-616d-408b-b1e4-0aaaf357d3fa",
+			"name": "Shippers",
+			"desc": "",
+			"cols": [
+				{
+					"id": "bea4a634-0b33-45de-9e05-2ad432d9ad9d",
+					"name": "ShipperID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": true
+					}
+				},
+				{
+					"id": "21d14382-8d59-47c5-a7b8-6a7eb78ffc0e",
+					"name": "CompanyName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "bdbaefee-787a-4b82-980f-e66e67b5a315",
+					"name": "Phone",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"451ad94c-644a-40b1-a999-1d6eabc5b07a"
+			],
+			"keys": [
+				{
+					"id": "b8a57262-d68a-4ca7-8c3f-bc1ef675eded",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "ffb23491-3de7-479d-aecb-e6190f0f3656",
+							"colid": "bea4a634-0b33-45de-9e05-2ad432d9ad9d"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"8d17552c-91ab-42bf-83fc-a2eb95087fe4": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "8d17552c-91ab-42bf-83fc-a2eb95087fe4",
+			"name": "Suppliers",
+			"desc": "",
+			"cols": [
+				{
+					"id": "3632d982-7e2b-4ed9-9726-28d3f9d51bb2",
+					"name": "SupplierID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": true
+					}
+				},
+				{
+					"id": "6c3be2a7-6158-4bc0-9d4d-accc0a65623b",
+					"name": "CompanyName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "1e0b9e6c-c372-43c6-91b8-f28756c67bef",
+					"name": "ContactName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "94d35dd9-c91e-41fe-9adc-24f5ddfdb02c",
+					"name": "ContactTitle",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "4f629bff-37d2-42c2-ae3c-485a71df8e26",
+					"name": "Address",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "70ae0305-4742-4bfe-8da0-8aa1b1cd006d",
+					"name": "City",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "ecf45970-e05e-4359-9a18-df9180dae86b",
+					"name": "Region",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "01f8f7bf-bcd5-4602-a0e0-67b2988ea26f",
+					"name": "PostalCode",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "574f5411-7c2d-442a-8b6d-f7621df0fd8e",
+					"name": "Country",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "a71aad90-65d5-4a26-be94-224a24d587f2",
+					"name": "Phone",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "5f465f9b-2ba6-4c19-8343-b411c8144320",
+					"name": "Fax",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "958e35c9-5ff3-4e34-ae0c-521dd719d32a",
+					"name": "HomePage",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"3c259386-c70e-44fa-95e1-fba21031f2b2"
+			],
+			"keys": [
+				{
+					"id": "37961a80-a1ac-476a-ad6a-38a527c48c55",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "89b0ccca-391c-496b-bd69-99657ce26b19",
+							"colid": "3632d982-7e2b-4ed9-9726-28d3f9d51bb2"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		},
+		"1a297c6a-179d-4107-8b41-9c1551fbfcae": {
+			"lines": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"id": "1a297c6a-179d-4107-8b41-9c1551fbfcae",
+			"name": "Territories",
+			"desc": "",
+			"cols": [
+				{
+					"id": "a54aa495-fed4-4499-b841-0c9ce2499a8b",
+					"name": "TerritoryID",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "6fbbb987-9de7-44a6-96e2-cd777eca7c0a",
+					"name": "TerritoryDescription",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": false,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				},
+				{
+					"id": "8eb2ed38-6b68-4233-8be1-61345f144b8b",
+					"name": "RegionID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"data": "",
+					"estimatedSize": "",
+					"defaultvalue": "",
+					"collation": "",
+					"fk": true,
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					}
+				}
+			],
+			"relations": [
+				"ca496287-cc9d-4d61-af07-c1fdcc1a2113",
+				"63998a18-95f9-4c1b-b90b-952c9c396fcc"
+			],
+			"keys": [
+				{
+					"id": "2c11d283-2bcb-43b5-b78e-83cd5c3e2355",
+					"isPk": true,
+					"name": "Primary key",
+					"cols": [
+						{
+							"id": "6a7752cd-54b4-4549-a407-1c868db020d2",
+							"colid": "a54aa495-fed4-4499-b841-0c9ce2499a8b"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"estimatedSize": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			},
+			"visible": true,
+			"customCode": ""
+		}
+	},
+	"relations": {
+		"7b2306ac-5a69-4a01-b588-0dd1456d418f": {
+			"id": "7b2306ac-5a69-4a01-b588-0dd1456d418f",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "2d806692-84ac-451f-bf38-0c516c178f9b",
+					"parentcol": "8f87f2e4-be15-4bfa-a90c-dc904b0a1f1f",
+					"childcol": "277e7907-fb53-4c42-82c3-9b2297948138"
+				}
+			],
+			"child": "fa1b3db4-c530-40c6-a526-541298513184",
+			"parent": "dd7a70db-40e7-49cf-a818-0f4a30689986",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "CustomerDemographics_CustomerCustomerDemo",
+			"desc": "",
+			"parent_key": "dfcb8e4d-aeec-4275-9380-7bbb95968d62",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"62afc1b0-ddcb-421d-9fe1-fb794b5366ba": {
+			"id": "62afc1b0-ddcb-421d-9fe1-fb794b5366ba",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "b60f90f2-6e58-442e-994d-24a44cb33d0c",
+					"parentcol": "7193fe0a-bd0b-46e6-958e-ae7b96a9f59f",
+					"childcol": "8f98b113-21fe-4a45-9968-7511e3162007"
+				}
+			],
+			"child": "fa1b3db4-c530-40c6-a526-541298513184",
+			"parent": "6a67c74b-fcd3-4ee0-bbf2-1980cafa2e6d",
+			"c_mp": "false",
+			"c_mch": "true",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Customers_CustomerCustomerDemo",
+			"desc": "",
+			"parent_key": "3b9dcf6e-3cf9-4f10-9c8b-4b3dcdc8f03b",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"3be9d39e-c38e-433b-959a-f0f2cabe1231": {
+			"id": "3be9d39e-c38e-433b-959a-f0f2cabe1231",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "62ce076a-606c-4c4d-ac79-0011af851b7d",
+					"parentcol": "90cd323e-61ee-4cb3-b653-04ff0143582c",
+					"childcol": "f6a5930d-f39f-44f1-ba79-11f4ef9104ee"
+				}
+			],
+			"child": "2c194e67-0bba-400d-bac6-77c3ced6c22e",
+			"parent": "2c194e67-0bba-400d-bac6-77c3ced6c22e",
+			"c_mp": "true",
+			"c_mch": "false",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Employees_Employees",
+			"desc": "",
+			"parent_key": "d4dd597e-9c72-46f9-b6ce-0337babe51e6",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"ca496287-cc9d-4d61-af07-c1fdcc1a2113": {
+			"id": "ca496287-cc9d-4d61-af07-c1fdcc1a2113",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "37510214-da5d-467b-a668-ef448c36f411",
+					"parentcol": "a54aa495-fed4-4499-b841-0c9ce2499a8b",
+					"childcol": "b5c6db3e-4da6-409a-84d4-461b1b091c18"
+				}
+			],
+			"child": "3ba2ed01-1d42-4014-a39e-63f5db5b1f66",
+			"parent": "1a297c6a-179d-4107-8b41-9c1551fbfcae",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Territories_EmployeeTerritories",
+			"desc": "",
+			"parent_key": "2c11d283-2bcb-43b5-b78e-83cd5c3e2355",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"47f8637e-246d-456d-88dd-67d14f4d7fc6": {
+			"id": "47f8637e-246d-456d-88dd-67d14f4d7fc6",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "33f76e10-2f4e-4734-a942-577bb0a44a51",
+					"parentcol": "90cd323e-61ee-4cb3-b653-04ff0143582c",
+					"childcol": "3e0e30f5-25b2-4ab8-9eff-f38c3fa9d444"
+				}
+			],
+			"child": "3ba2ed01-1d42-4014-a39e-63f5db5b1f66",
+			"parent": "2c194e67-0bba-400d-bac6-77c3ced6c22e",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Employees_EmployeeTerritories",
+			"desc": "",
+			"parent_key": "d4dd597e-9c72-46f9-b6ce-0337babe51e6",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"88fda8f1-e512-47c1-b3e4-621fe2bc77be": {
+			"id": "88fda8f1-e512-47c1-b3e4-621fe2bc77be",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "337516f4-4348-45be-8b6b-128e6c603fc9",
+					"parentcol": "98c3c93d-e64c-4e42-88d9-50ab03a034c2",
+					"childcol": "b828ddad-6dc5-4728-ad7d-852951236fa5"
+				}
+			],
+			"child": "9a915558-6fa9-4248-bb15-363ce56f9ea3",
+			"parent": "6c5ab42a-62bf-4e22-aaca-09ef46da2354",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Products_Order Details",
+			"desc": "",
+			"parent_key": "d386ac14-af18-445e-911a-63e9da3a3e60",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"31c9b5cc-d887-4324-97f2-e007becc6a37": {
+			"id": "31c9b5cc-d887-4324-97f2-e007becc6a37",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "30f0999b-692b-4235-b829-bc335e0eb561",
+					"parentcol": "ad6d1773-aff1-4a24-9a9c-38717e53ade1",
+					"childcol": "f4f5e0eb-b413-4294-ae63-3a60c593c12a"
+				}
+			],
+			"child": "9a915558-6fa9-4248-bb15-363ce56f9ea3",
+			"parent": "d71dcf54-604a-4ce8-879e-6b94a9d002d6",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Orders_Order Details",
+			"desc": "",
+			"parent_key": "830ba7f9-1299-4bef-b8b9-57ca8a7c8a26",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"451ad94c-644a-40b1-a999-1d6eabc5b07a": {
+			"id": "451ad94c-644a-40b1-a999-1d6eabc5b07a",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "e1cca23b-1b59-49c2-8768-71caa9ea6433",
+					"parentcol": "bea4a634-0b33-45de-9e05-2ad432d9ad9d",
+					"childcol": "5c1eb5f0-08d6-49fd-ac37-2a57452c68f5"
+				}
+			],
+			"child": "d71dcf54-604a-4ce8-879e-6b94a9d002d6",
+			"parent": "b57805f8-616d-408b-b1e4-0aaaf357d3fa",
+			"c_mp": "true",
+			"c_mch": "false",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Shippers_Orders",
+			"desc": "",
+			"parent_key": "b8a57262-d68a-4ca7-8c3f-bc1ef675eded",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"f76cf908-8a1e-4f9c-9d79-b988bc4101cc": {
+			"id": "f76cf908-8a1e-4f9c-9d79-b988bc4101cc",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "b5ca68a9-ff35-4347-84fc-de86c9ff3c52",
+					"parentcol": "7193fe0a-bd0b-46e6-958e-ae7b96a9f59f",
+					"childcol": "7a318e6a-0136-4d56-9c6b-62126e998cbc"
+				}
+			],
+			"child": "d71dcf54-604a-4ce8-879e-6b94a9d002d6",
+			"parent": "6a67c74b-fcd3-4ee0-bbf2-1980cafa2e6d",
+			"c_mp": "false",
+			"c_mch": "false",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Customers_Orders",
+			"desc": "",
+			"parent_key": "3b9dcf6e-3cf9-4f10-9c8b-4b3dcdc8f03b",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"2a6763de-37b2-4ae2-be93-a961f90110f6": {
+			"id": "2a6763de-37b2-4ae2-be93-a961f90110f6",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "09732039-8014-4620-bc6d-c539ff6ded4d",
+					"parentcol": "90cd323e-61ee-4cb3-b653-04ff0143582c",
+					"childcol": "abd002a1-38f8-40da-8c17-fe94cc1d1f08"
+				}
+			],
+			"child": "d71dcf54-604a-4ce8-879e-6b94a9d002d6",
+			"parent": "2c194e67-0bba-400d-bac6-77c3ced6c22e",
+			"c_mp": "true",
+			"c_mch": "false",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Employees_Orders",
+			"desc": "",
+			"parent_key": "d4dd597e-9c72-46f9-b6ce-0337babe51e6",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"3c259386-c70e-44fa-95e1-fba21031f2b2": {
+			"id": "3c259386-c70e-44fa-95e1-fba21031f2b2",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "8749e2ea-8e48-4a59-9f88-94b2eed61ded",
+					"parentcol": "3632d982-7e2b-4ed9-9726-28d3f9d51bb2",
+					"childcol": "1642094d-dba9-43a6-b455-992b13d28264"
+				}
+			],
+			"child": "6c5ab42a-62bf-4e22-aaca-09ef46da2354",
+			"parent": "8d17552c-91ab-42bf-83fc-a2eb95087fe4",
+			"c_mp": "true",
+			"c_mch": "false",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Suppliers_Products",
+			"desc": "",
+			"parent_key": "37961a80-a1ac-476a-ad6a-38a527c48c55",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"f235acbe-312e-4665-9c96-a9d840dae4d2": {
+			"id": "f235acbe-312e-4665-9c96-a9d840dae4d2",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "70277115-815e-4af9-b94c-7582acc4bd49",
+					"parentcol": "310c880a-e6e9-4a8c-933f-26544716cfd0",
+					"childcol": "0762bfeb-995f-4f92-9956-e1a083f9c590"
+				}
+			],
+			"child": "6c5ab42a-62bf-4e22-aaca-09ef46da2354",
+			"parent": "65beb7c6-05f4-416d-a8d2-a99030497374",
+			"c_mp": "true",
+			"c_mch": "false",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Categories_Products",
+			"desc": "",
+			"parent_key": "2e44ef81-ea86-4d8e-89f2-cc1dfa4f749a",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"63998a18-95f9-4c1b-b90b-952c9c396fcc": {
+			"id": "63998a18-95f9-4c1b-b90b-952c9c396fcc",
+			"type": "identifying",
+			"cols": [
+				{
+					"id": "37251ba5-16f0-4daf-9ce9-679975d88201",
+					"parentcol": "905decd9-ce22-427b-b6b3-0d3cfd226dd9",
+					"childcol": "8eb2ed38-6b68-4233-8be1-61345f144b8b"
+				}
+			],
+			"child": "1a297c6a-179d-4107-8b41-9c1551fbfcae",
+			"parent": "e3f325bf-b4f7-4ea0-90a6-08e8b6990ba6",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_ch": "many",
+			"c_p": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"name": "Regions_Territories",
+			"desc": "",
+			"parent_key": "15300d4a-68f3-46aa-b092-a765e18afad2",
+			"ri_pd": "No action",
+			"ri_pu": "No action",
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		}
+	},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"connectionId": "7fbff627-d0b7-4dd6-a835-fd07952cf5b7",
+		"connectionVersion": "[{\"schema_version\":30}]",
+		"activeDiagram": "321f0eb1-d29b-4905-9608-4243ade77a72",
+		"caseConvention": "under",
+		"color": "transparent",
+		"def_coltopk": true,
+		"desc": "",
+		"id": "8f7bb979-71bf-4f09-8131-fcf049346690",
+		"isDirty": false,
+		"name": "SQLite",
+		"parentTableInFkCols": true,
+		"path": "",
+		"replaceSpace": "_",
+		"sideSelections": true,
+		"storedin": {
+			"major": 12,
+			"minor": 2,
+			"extra": 0
+		},
+		"laststoredin": {
+			"major": 12,
+			"minor": 2,
+			"extra": 0
+		},
+		"type": "SQLITE",
+		"version": 1,
+		"lastSaved": 1762339275523,
+		"sqlSettings": {
+			"wrapLines": true,
+			"wrapOffset": 80,
+			"indent": true,
+			"indentationString": "spaces",
+			"indentationSize": 2,
+			"limitItemsOnLine": true,
+			"maxListItemsOnLine": 3,
+			"statementDelimiter": ";",
+			"routineDelimiter": ";",
+			"keywordCase": "upper",
+			"identiferCase": "original",
+			"quotationExistance": "if_needed"
+		},
+		"writeFileParam": false,
+		"authorName": "",
+		"companyDetails": "",
+		"companyUrl": "",
+		"synchronizationSettings": {
+			"preserveData": "use_temporary_tables",
+			"ignoreSystemDefaults": "yes",
+			"includeWarnings": "yes",
+			"includeCreationSql": "no"
+		}
+	},
+	"otherObjects": {
+		"e98e26d6-12fb-4274-b8c8-df0aa9d7681b": {
+			"code": "CREATE VIEW [Alphabetical list of products] \nAS\nSELECT Products.*, \n       Categories.CategoryName\nFROM Categories \n   INNER JOIN Products ON Categories.CategoryID = Products.CategoryID\nWHERE (((Products.Discontinued)=0));\n",
+			"id": "e98e26d6-12fb-4274-b8c8-df0aa9d7681b",
+			"name": "Alphabetical list of products",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"7c7c6b3d-0a8e-4532-8ac7-9fbb05900519": {
+			"code": "CREATE VIEW [Current Product List] \nAS\nSELECT ProductID,\n       ProductName \nFROM Products \nWHERE Discontinued=0;\n",
+			"id": "7c7c6b3d-0a8e-4532-8ac7-9fbb05900519",
+			"name": "Current Product List",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"63a659fc-2705-44a6-a0f9-88f9fda5f817": {
+			"code": "CREATE VIEW [Customer and Suppliers by City] \nAS\nSELECT City, \n       CompanyName, \n       ContactName, \n       'Customers' AS Relationship \nFROM Customers\nUNION \nSELECT City, \n       CompanyName, \n       ContactName, \n       'Suppliers'\nFROM Suppliers \nORDER BY City, CompanyName;\n",
+			"id": "63a659fc-2705-44a6-a0f9-88f9fda5f817",
+			"name": "Customer and Suppliers by City",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"02da90ad-c04c-4415-acbd-6514c77d9460": {
+			"code": "CREATE VIEW [Invoices] \nAS\nSELECT Orders.ShipName,\n       Orders.ShipAddress,\n       Orders.ShipCity,\n       Orders.ShipRegion, \n       Orders.ShipPostalCode,\n       Orders.ShipCountry,\n       Orders.CustomerID,\n       Customers.CompanyName AS CustomerName, \n       Customers.Address,\n       Customers.City,\n       Customers.Region,\n       Customers.PostalCode,\n       Customers.Country,\n       (Employees.FirstName + ' ' + Employees.LastName) AS Salesperson, \n       Orders.OrderID,\n       Orders.OrderDate,\n       Orders.RequiredDate,\n       Orders.ShippedDate, \n       Shippers.CompanyName As ShipperName,\n       [Order Details].ProductID,\n       Products.ProductName, \n       [Order Details].UnitPrice,\n       [Order Details].Quantity,\n       [Order Details].Discount, \n       ((([Order Details].UnitPrice*Quantity*(1-Discount))/100)*100) AS ExtendedPrice,\n       Orders.Freight \nFROM Customers \n  JOIN Orders ON Customers.CustomerID = Orders.CustomerID  \n    JOIN Employees ON Employees.EmployeeID = Orders.EmployeeID    \n     JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID     \n      JOIN Products ON Products.ProductID = [Order Details].ProductID      \n       JOIN Shippers ON Shippers.ShipperID = Orders.ShipVia;\n",
+			"id": "02da90ad-c04c-4415-acbd-6514c77d9460",
+			"name": "Invoices",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"79398ca7-5809-430c-9597-cf6a8f6dff30": {
+			"code": "CREATE VIEW [Orders Qry] AS\nSELECT Orders.OrderID,\n       Orders.CustomerID,\n       Orders.EmployeeID, \n       Orders.OrderDate, \n       Orders.RequiredDate,\n       Orders.ShippedDate, \n       Orders.ShipVia, \n       Orders.Freight,\n       Orders.ShipName, \n       Orders.ShipAddress, \n       Orders.ShipCity,\n       Orders.ShipRegion,\n       Orders.ShipPostalCode,\n       Orders.ShipCountry,\n       Customers.CompanyName,\n       Customers.Address,\n       Customers.City,\n       Customers.Region,\n       Customers.PostalCode, \n       Customers.Country\nFROM Customers \n     JOIN Orders ON Customers.CustomerID = Orders.CustomerID;\n",
+			"id": "79398ca7-5809-430c-9597-cf6a8f6dff30",
+			"name": "Orders Qry",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"6fb06262-c6ab-41ce-a633-696acea1dae0": {
+			"code": "CREATE VIEW [Order Subtotals] AS\nSELECT [Order Details].OrderID, \nSum(([Order Details].UnitPrice*Quantity*(1-Discount)/100)*100) AS Subtotal\nFROM [Order Details]\nGROUP BY [Order Details].OrderID;\n",
+			"id": "6fb06262-c6ab-41ce-a633-696acea1dae0",
+			"name": "Order Subtotals",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"358caced-a12b-45f5-8d98-33f7de0911d2": {
+			"code": "CREATE VIEW [Product Sales for 1997] AS\nSELECT Categories.CategoryName, \n       Products.ProductName, \n       Sum(([Order Details].UnitPrice*Quantity*(1-Discount)/100)*100) AS ProductSales\nFROM Categories\n JOIN    Products On Categories.CategoryID = Products.CategoryID\n    JOIN  [Order Details] on Products.ProductID = [Order Details].ProductID     \n     JOIN  [Orders] on Orders.OrderID = [Order Details].OrderID \nWHERE Orders.ShippedDate Between DATETIME('1997-01-01') And DATETIME('1997-12-31')\nGROUP BY Categories.CategoryName, Products.ProductName;\n",
+			"id": "358caced-a12b-45f5-8d98-33f7de0911d2",
+			"name": "Product Sales for 1997",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"e7268beb-7760-49ec-93c9-b57e10ffa90c": {
+			"code": "CREATE VIEW [Products Above Average Price] AS\nSELECT Products.ProductName, \n       Products.UnitPrice\nFROM Products\nWHERE Products.UnitPrice>(SELECT AVG(UnitPrice) From Products);\n",
+			"id": "e7268beb-7760-49ec-93c9-b57e10ffa90c",
+			"name": "Products Above Average Price",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"3050e8af-ba9d-4c07-b720-eff79243c6ad": {
+			"code": "CREATE VIEW [Products by Category] AS\nSELECT Categories.CategoryName, \n       Products.ProductName, \n       Products.QuantityPerUnit, \n       Products.UnitsInStock, \n       Products.Discontinued\nFROM Categories \n     INNER JOIN Products ON Categories.CategoryID = Products.CategoryID\nWHERE Products.Discontinued <> 1;\n",
+			"id": "3050e8af-ba9d-4c07-b720-eff79243c6ad",
+			"name": "Products by Category",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"b5e89857-0a05-4e66-8980-1009a829659e": {
+			"code": "CREATE VIEW [Quarterly Orders] AS\nSELECT DISTINCT Customers.CustomerID, \n                Customers.CompanyName, \n                Customers.City, \n                Customers.Country\nFROM Customers \n     JOIN Orders ON Customers.CustomerID = Orders.CustomerID\nWHERE Orders.OrderDate BETWEEN DATETIME('1997-01-01') And DATETIME('1997-12-31');\n",
+			"id": "b5e89857-0a05-4e66-8980-1009a829659e",
+			"name": "Quarterly Orders",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"28a77a82-8f69-4e68-996e-7960af6c9304": {
+			"code": "CREATE VIEW [Sales Totals by Amount] AS\nSELECT [Order Subtotals].Subtotal AS SaleAmount, \n                  Orders.OrderID, \n               Customers.CompanyName, \n                  Orders.ShippedDate\nFROM Customers \n JOIN Orders ON Customers.CustomerID = Orders.CustomerID\n    JOIN [Order Subtotals] ON Orders.OrderID = [Order Subtotals].OrderID \nWHERE ([Order Subtotals].Subtotal >2500) \nAND (Orders.ShippedDate BETWEEN DATETIME('1997-01-01') And DATETIME('1997-12-31'));\n",
+			"id": "28a77a82-8f69-4e68-996e-7960af6c9304",
+			"name": "Sales Totals by Amount",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"82417d8e-9643-44be-8a30-49fff6a434fb": {
+			"code": "CREATE VIEW [Summary of Sales by Quarter] AS\nSELECT Orders.ShippedDate, \n       Orders.OrderID, \n       [Order Subtotals].Subtotal\nFROM Orders \n     INNER JOIN [Order Subtotals] ON Orders.OrderID = [Order Subtotals].OrderID\nWHERE Orders.ShippedDate IS NOT NULL;\n",
+			"id": "82417d8e-9643-44be-8a30-49fff6a434fb",
+			"name": "Summary of Sales by Quarter",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"44d62ebd-b2e8-4652-916c-0761e0879cb4": {
+			"code": "CREATE VIEW [Summary of Sales by Year] AS\nSELECT      Orders.ShippedDate, \n            Orders.OrderID, \n [Order Subtotals].Subtotal\nFROM Orders \n     INNER JOIN [Order Subtotals] ON Orders.OrderID = [Order Subtotals].OrderID\nWHERE Orders.ShippedDate IS NOT NULL;\n",
+			"id": "44d62ebd-b2e8-4652-916c-0761e0879cb4",
+			"name": "Summary of Sales by Year",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"2ba73fb4-f5a2-41d9-b460-083fb9d3e9d8": {
+			"code": "CREATE VIEW [Category Sales for 1997] AS\nSELECT     [Product Sales for 1997].CategoryName, \n       Sum([Product Sales for 1997].ProductSales) AS CategorySales\nFROM [Product Sales for 1997]\nGROUP BY [Product Sales for 1997].CategoryName;\n",
+			"id": "2ba73fb4-f5a2-41d9-b460-083fb9d3e9d8",
+			"name": "Category Sales for 1997",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"63185bc0-62da-42d7-8ff1-9cc2116c4931": {
+			"code": "CREATE VIEW [Order Details Extended] AS\nSELECT [Order Details].OrderID, \n       [Order Details].ProductID, \n       Products.ProductName, \n\t   [Order Details].UnitPrice, \n       [Order Details].Quantity, \n       [Order Details].Discount, \n      ([Order Details].UnitPrice*Quantity*(1-Discount)/100)*100 AS ExtendedPrice\nFROM Products \n     JOIN [Order Details] ON Products.ProductID = [Order Details].ProductID;\n",
+			"id": "63185bc0-62da-42d7-8ff1-9cc2116c4931",
+			"name": "Order Details Extended",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"127bb5cf-3cf5-473e-be61-75fda8137ae6": {
+			"code": "CREATE VIEW [Sales by Category] AS\nSELECT Categories.CategoryID, \n       Categories.CategoryName, \n         Products.ProductName, \n\tSum([Order Details Extended].ExtendedPrice) AS ProductSales\nFROM  Categories \n    JOIN Products \n      ON Categories.CategoryID = Products.CategoryID\n       JOIN [Order Details Extended] \n         ON Products.ProductID = [Order Details Extended].ProductID                \n           JOIN Orders \n             ON Orders.OrderID = [Order Details Extended].OrderID \nWHERE Orders.OrderDate BETWEEN DATETIME('1997-01-01') And DATETIME('1997-12-31')\nGROUP BY Categories.CategoryID, Categories.CategoryName, Products.ProductName;\n",
+			"id": "127bb5cf-3cf5-473e-be61-75fda8137ae6",
+			"name": "Sales by Category",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		},
+		"34ac54da-7d1b-4b74-b5e8-f979420b2029": {
+			"code": "CREATE VIEW [ProductDetails_V] as\nselect \np.*, \nc.CategoryName, c.Description as [CategoryDescription],\ns.CompanyName as [SupplierName], s.Region as [SupplierRegion]\nfrom [Products] p\njoin [Categories] c on p.CategoryId = c.CategoryId\njoin [Suppliers] s on s.SupplierId = p.SupplierId;\n",
+			"id": "34ac54da-7d1b-4b74-b5e8-f979420b2029",
+			"name": "ProductDetails_V",
+			"desc": "",
+			"lines": [],
+			"type": "View",
+			"visible": true,
+			"generateCustomCode": true,
+			"generate": true,
+			"customCode": "",
+			"typeExpression": ""
+		}
+	},
+	"diagrams": {
+		"321f0eb1-d29b-4905-9608-4243ade77a72": {
+			"id": "321f0eb1-d29b-4905-9608-4243ade77a72",
+			"lineColor": "transparent",
+			"description": "",
+			"diagramItems": {
+				"65beb7c6-05f4-416d-a8d2-a99030497374": {
+					"x": 185,
+					"y": 1534,
+					"gHeight": 99,
+					"gWidth": 203,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "65beb7c6-05f4-416d-a8d2-a99030497374",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"fa1b3db4-c530-40c6-a526-541298513184": {
+					"x": 1354,
+					"y": 1804,
+					"gHeight": 63,
+					"gWidth": 220,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "fa1b3db4-c530-40c6-a526-541298513184",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"dd7a70db-40e7-49cf-a818-0f4a30689986": {
+					"x": 961,
+					"y": 1972,
+					"gHeight": 63,
+					"gWidth": 214,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "dd7a70db-40e7-49cf-a818-0f4a30689986",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"6a67c74b-fcd3-4ee0-bbf2-1980cafa2e6d": {
+					"x": 966,
+					"y": 1639,
+					"gHeight": 225,
+					"gWidth": 207,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "6a67c74b-fcd3-4ee0-bbf2-1980cafa2e6d",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"2c194e67-0bba-400d-bac6-77c3ced6c22e": {
+					"x": 1747,
+					"y": 988,
+					"gHeight": 351,
+					"gWidth": 207,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "2c194e67-0bba-400d-bac6-77c3ced6c22e",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"3ba2ed01-1d42-4014-a39e-63f5db5b1f66": {
+					"x": 1354,
+					"y": 964,
+					"gHeight": 63,
+					"gWidth": 207,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "3ba2ed01-1d42-4014-a39e-63f5db5b1f66",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"9a915558-6fa9-4248-bb15-363ce56f9ea3": {
+					"x": 963,
+					"y": 1357,
+					"gHeight": 117,
+					"gWidth": 196,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "9a915558-6fa9-4248-bb15-363ce56f9ea3",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"d71dcf54-604a-4ce8-879e-6b94a9d002d6": {
+					"x": 1345,
+					"y": 1276,
+					"gHeight": 279,
+					"gWidth": 225,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "d71dcf54-604a-4ce8-879e-6b94a9d002d6",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"6c5ab42a-62bf-4e22-aaca-09ef46da2354": {
+					"x": 569,
+					"y": 1396,
+					"gHeight": 207,
+					"gWidth": 219,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "6c5ab42a-62bf-4e22-aaca-09ef46da2354",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"e3f325bf-b4f7-4ea0-90a6-08e8b6990ba6": {
+					"x": 542,
+					"y": 796,
+					"gHeight": 63,
+					"gWidth": 222,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "e3f325bf-b4f7-4ea0-90a6-08e8b6990ba6",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"b57805f8-616d-408b-b1e4-0aaaf357d3fa": {
+					"x": 963,
+					"y": 1123,
+					"gHeight": 81,
+					"gWidth": 207,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "b57805f8-616d-408b-b1e4-0aaaf357d3fa",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"8d17552c-91ab-42bf-83fc-a2eb95087fe4": {
+					"x": 185,
+					"y": 1126,
+					"gHeight": 243,
+					"gWidth": 207,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "8d17552c-91ab-42bf-83fc-a2eb95087fe4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"1a297c6a-179d-4107-8b41-9c1551fbfcae": {
+					"x": 940,
+					"y": 787,
+					"gHeight": 81,
+					"gWidth": 233,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "1a297c6a-179d-4107-8b41-9c1551fbfcae",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"e98e26d6-12fb-4274-b8c8-df0aa9d7681b": {
+					"x": 494,
+					"y": 2119,
+					"gHeight": 44,
+					"gWidth": 178,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "e98e26d6-12fb-4274-b8c8-df0aa9d7681b",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"7c7c6b3d-0a8e-4532-8ac7-9fbb05900519": {
+					"x": 932,
+					"y": 2230,
+					"gHeight": 44,
+					"gWidth": 150,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "7c7c6b3d-0a8e-4532-8ac7-9fbb05900519",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"63a659fc-2705-44a6-a0f9-88f9fda5f817": {
+					"x": 185,
+					"y": 2119,
+					"gHeight": 44,
+					"gWidth": 200,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "63a659fc-2705-44a6-a0f9-88f9fda5f817",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"02da90ad-c04c-4415-acbd-6514c77d9460": {
+					"x": 1166,
+					"y": 2230,
+					"gHeight": 44,
+					"gWidth": 150,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "02da90ad-c04c-4415-acbd-6514c77d9460",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"79398ca7-5809-430c-9597-cf6a8f6dff30": {
+					"x": 1634,
+					"y": 2230,
+					"gHeight": 44,
+					"gWidth": 150,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "79398ca7-5809-430c-9597-cf6a8f6dff30",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"6fb06262-c6ab-41ce-a633-696acea1dae0": {
+					"x": 1400,
+					"y": 2230,
+					"gHeight": 44,
+					"gWidth": 150,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "6fb06262-c6ab-41ce-a633-696acea1dae0",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"358caced-a12b-45f5-8d98-33f7de0911d2": {
+					"x": 434,
+					"y": 2230,
+					"gHeight": 44,
+					"gWidth": 150,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "358caced-a12b-45f5-8d98-33f7de0911d2",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"e7268beb-7760-49ec-93c9-b57e10ffa90c": {
+					"x": 795,
+					"y": 2119,
+					"gHeight": 44,
+					"gWidth": 191,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "e7268beb-7760-49ec-93c9-b57e10ffa90c",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"3050e8af-ba9d-4c07-b720-eff79243c6ad": {
+					"x": 419,
+					"y": 2341,
+					"gHeight": 44,
+					"gWidth": 150,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "3050e8af-ba9d-4c07-b720-eff79243c6ad",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"b5e89857-0a05-4e66-8980-1009a829659e": {
+					"x": 653,
+					"y": 2341,
+					"gHeight": 44,
+					"gWidth": 150,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "b5e89857-0a05-4e66-8980-1009a829659e",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"28a77a82-8f69-4e68-996e-7960af6c9304": {
+					"x": 683,
+					"y": 2230,
+					"gHeight": 44,
+					"gWidth": 151,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "28a77a82-8f69-4e68-996e-7960af6c9304",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"82417d8e-9643-44be-8a30-49fff6a434fb": {
+					"x": 1089,
+					"y": 2119,
+					"gHeight": 44,
+					"gWidth": 188,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "82417d8e-9643-44be-8a30-49fff6a434fb",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"44d62ebd-b2e8-4652-916c-0761e0879cb4": {
+					"x": 1375,
+					"y": 2119,
+					"gHeight": 44,
+					"gWidth": 167,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "44d62ebd-b2e8-4652-916c-0761e0879cb4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"2ba73fb4-f5a2-41d9-b460-083fb9d3e9d8": {
+					"x": 1639,
+					"y": 2119,
+					"gHeight": 44,
+					"gWidth": 153,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "2ba73fb4-f5a2-41d9-b460-083fb9d3e9d8",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"63185bc0-62da-42d7-8ff1-9cc2116c4931": {
+					"x": 185,
+					"y": 2230,
+					"gHeight": 44,
+					"gWidth": 151,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "63185bc0-62da-42d7-8ff1-9cc2116c4931",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"127bb5cf-3cf5-473e-be61-75fda8137ae6": {
+					"x": 887,
+					"y": 2341,
+					"gHeight": 44,
+					"gWidth": 150,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "127bb5cf-3cf5-473e-be61-75fda8137ae6",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				},
+				"34ac54da-7d1b-4b74-b5e8-f979420b2029": {
+					"x": 185,
+					"y": 2341,
+					"gHeight": 44,
+					"gWidth": 150,
+					"background": "#3f51b5",
+					"color": "#eee",
+					"referencedItemId": "34ac54da-7d1b-4b74-b5e8-f979420b2029",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10"
+				}
+			},
+			"isOpen": true,
+			"main": true,
+			"name": "Main Diagram",
+			"keysgraphics": true,
+			"linegraphics": "detailed",
+			"zoom": 0.6,
+			"background": "transparent",
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd",
+			"showEstimatedSize": false,
+			"showSchemaContainer": false,
+			"showEmbeddedInParents": true,
+			"showCardinalityCaptions": false,
+			"showRelationshipNames": false,
+			"showLineCaptions": false,
+			"showDependencyCaptions": false,
+			"showColumns": true,
+			"showColumnDataTypes": true,
+			"showSampleData": false,
+			"showTableIndexes": false,
+			"showTableDescriptions": false,
+			"showRelations": true,
+			"showLines": true,
+			"showDependencies": true,
+			"showHorizontal": false,
+			"showDescriptions": true,
+			"showIndicators": false,
+			"showProgress": false,
+			"showIndicatorCaptions": false,
+			"backgroundImage": "na",
+			"descriptionsColor": "transparent",
+			"boxSize": "0",
+			"boxSpacing": "2",
+			"boxAlign": "center",
+			"lineWidth": "2",
+			"embeddedSpacing": "2",
+			"showLabels": true,
+			"showMainIcon": true,
+			"showCustomizations": false,
+			"showExportDimensions": false,
+			"showCompleted": true,
+			"showAnimations": true
+		}
+	},
+	"diagramsOrder": [],
+	"order": [
+		"65beb7c6-05f4-416d-a8d2-a99030497374",
+		"fa1b3db4-c530-40c6-a526-541298513184",
+		"dd7a70db-40e7-49cf-a818-0f4a30689986",
+		"6a67c74b-fcd3-4ee0-bbf2-1980cafa2e6d",
+		"3ba2ed01-1d42-4014-a39e-63f5db5b1f66",
+		"2c194e67-0bba-400d-bac6-77c3ced6c22e",
+		"9a915558-6fa9-4248-bb15-363ce56f9ea3",
+		"d71dcf54-604a-4ce8-879e-6b94a9d002d6",
+		"6c5ab42a-62bf-4e22-aaca-09ef46da2354",
+		"e3f325bf-b4f7-4ea0-90a6-08e8b6990ba6",
+		"b57805f8-616d-408b-b1e4-0aaaf357d3fa",
+		"8d17552c-91ab-42bf-83fc-a2eb95087fe4",
+		"1a297c6a-179d-4107-8b41-9c1551fbfcae",
+		"f235acbe-312e-4665-9c96-a9d840dae4d2",
+		"7b2306ac-5a69-4a01-b588-0dd1456d418f",
+		"62afc1b0-ddcb-421d-9fe1-fb794b5366ba",
+		"f76cf908-8a1e-4f9c-9d79-b988bc4101cc",
+		"47f8637e-246d-456d-88dd-67d14f4d7fc6",
+		"3be9d39e-c38e-433b-959a-f0f2cabe1231",
+		"2a6763de-37b2-4ae2-be93-a961f90110f6",
+		"31c9b5cc-d887-4324-97f2-e007becc6a37",
+		"88fda8f1-e512-47c1-b3e4-621fe2bc77be",
+		"63998a18-95f9-4c1b-b90b-952c9c396fcc",
+		"451ad94c-644a-40b1-a999-1d6eabc5b07a",
+		"3c259386-c70e-44fa-95e1-fba21031f2b2",
+		"ca496287-cc9d-4d61-af07-c1fdcc1a2113",
+		"e98e26d6-12fb-4274-b8c8-df0aa9d7681b",
+		"2ba73fb4-f5a2-41d9-b460-083fb9d3e9d8",
+		"7c7c6b3d-0a8e-4532-8ac7-9fbb05900519",
+		"63a659fc-2705-44a6-a0f9-88f9fda5f817",
+		"02da90ad-c04c-4415-acbd-6514c77d9460",
+		"63185bc0-62da-42d7-8ff1-9cc2116c4931",
+		"6fb06262-c6ab-41ce-a633-696acea1dae0",
+		"79398ca7-5809-430c-9597-cf6a8f6dff30",
+		"358caced-a12b-45f5-8d98-33f7de0911d2",
+		"34ac54da-7d1b-4b74-b5e8-f979420b2029",
+		"e7268beb-7760-49ec-93c9-b57e10ffa90c",
+		"3050e8af-ba9d-4c07-b720-eff79243c6ad",
+		"b5e89857-0a05-4e66-8980-1009a829659e",
+		"28a77a82-8f69-4e68-996e-7960af6c9304",
+		"127bb5cf-3cf5-473e-be61-75fda8137ae6",
+		"82417d8e-9643-44be-8a30-49fff6a434fb",
+		"44d62ebd-b2e8-4652-916c-0761e0879cb4"
+	],
+	"collapsedTreeItems": [],
+	"reverseStats": {}
+}
