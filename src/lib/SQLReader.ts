@@ -46,7 +46,6 @@ export async function runSQLQuery(query: string): Promise<SQLQueryResult> {
     })
     const db = new SQL.Database(bytes)
 
-    // 4️⃣ Ejecutar query
     const res = db.exec(query)
 
     if (res.length === 0) {
