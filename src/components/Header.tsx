@@ -34,7 +34,7 @@ const Header = () => {
           rel='noreferrer noopener'
           className='hover:underline'
         >
-          Mirar la imagen de la DDBB
+          Mirar la imagen de la BBDD
         </a>
         <a
           href='https://github.com/jpwhite3/northwind-SQLite3?tab=readme-ov-file'
