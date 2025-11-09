@@ -9,9 +9,18 @@ const QueryPractice = () => {
 
   async function runQuery(evt: React.FormEvent, query: string) {
     evt.preventDefault()
-    console.log('query!:', query)
-    const result = await runSQLQuery(query)
-    setQueryState(result)
+    try {
+      const result = await runSQLQuery(query)
+      setQueryState(result)
+    } catch (err: unknown) {
+      console.error('Error al ejecutar la consulta:', err)
+      setQueryState({
+        query,
+        table: 'unknown',
+        columns: 'unknown',
+        values: [['Error de consulta SQL, revisa la sintaxis']],
+      })
+    }
   }
 
   function cleanSingleQuery() {
@@ -27,8 +36,6 @@ const QueryPractice = () => {
       console.error('Error al formatear SQL:', err)
     }
   }
-
-  console.log('queryState', queryState)
 
   return (
     <div className='flex flex-col items-start gap-4 p-4 bg-[#effef4] border-2 border-[#73EAA480] rounded-3xl mb-12'>
@@ -70,7 +77,11 @@ const QueryPractice = () => {
         </form>
         <div>
           {queryState && (
-            <div>
+            <div
+              className={` ${
+                queryState.table === 'unknown' ? 'text-red-500 text-xl' : ''
+              }`}
+            >
               <small>
                 {queryState.values.map((row) => row.join(' ')).join(', ')}
               </small>
