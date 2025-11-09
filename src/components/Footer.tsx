@@ -17,7 +17,7 @@ const Footer = () => {
       <p className='flex items-center justify-center gap-x-3'>
         Si te ha gustado 🌟, dale una estrella al repositorio:
         <a
-          href='https://github.com/albertlnz'
+          href='https://github.com/AlbertLnz/northwind-sql-alr'
           target='_blank'
           rel='noreferrer noopener'
         >
